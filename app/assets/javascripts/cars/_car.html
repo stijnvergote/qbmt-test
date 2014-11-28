@@ -1,0 +1,25 @@
+<div class="container">
+  <header>
+      <h3>{{car.brand}} {{car.car_type}}</h3>
+      <h4>&#8364;{{car.base_price}}</h4>
+  </header>
+  <div class="col-md-4">
+    Year: {{car.year}}<br/>
+    Consumption: {{car.consumption}}l/100km<br/>
+    Transmission: {{car.transmission}}<br/>
+    Driving: {{car.driving}}<br/>
+    Gears: {{car.gears}}<br/>
+    Color: {{car.color}}<br/>
+    Doors: {{car.doors}}<br/>
+  </div>
+  <div class="col-md-8">
+    Select the desired options
+    <div ng-repeat="option in options">
+    <input type="checkbox" checklist-value="{{option.id}}" />  {{option.name}}
+    <a ng-click="showme=true" ng-hide="showme">Meer</a>
+      <div ng-show="showme">  &#8364;{{option.price}}<br/>  {{option.description}}
+      <br/><a ng-click="showme=false">Minder</a></div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary">Order</button>

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  series: MyString
+  car_type: MyString
+  base_price: 1
+  year: 1
+  consumption: 1
+  transmission: MyString
+  driving: MyString
+  gears: 1
+  color: MyString
+  doors: 1
+
+two:
+  brand: MyString
+  series: MyString
+  car_type: MyString
+  base_price: 1
+  year: 1
+  consumption: 1
+  transmission: MyString
+  driving: MyString
+  gears: 1
+  color: MyString
+  doors: 1

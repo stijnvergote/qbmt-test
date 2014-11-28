@@ -1,0 +1,17 @@
+<div class="container">
+    <header>
+      <h3>BMW's</h3>
+    </header>
+    <br/>
+    <div>
+    <div class="row cardContainer">
+      <div class="span3 card" ng-repeat="car in cars | orderBy: 'car_type'">
+        <div class="cardHeader"><a href="#/cars/{{car.id}}">{{car.brand}} {{car.car_type}}</a></div>
+        <div class="cardBody">&#8364;{{car.base_price}}
+        <br/>
+        {{car.year}}
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
